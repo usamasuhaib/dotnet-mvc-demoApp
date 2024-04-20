@@ -1,0 +1,36 @@
+﻿@model MVC.DemoProject.Models.Student
+
+@{
+    ViewData["Title"] = "EditStudent";
+}
+
+<h1>Edit Student</h1>
+<form asp-controller="Student" asp-action="EditStudent" method="post">
+    <div class="mb-3">
+        <label for="id" class="form-label">Student ID</label>
+        <input type="text" class="form-control" asp-for="Id" id="id" name="id" readonly>
+        <span asp-validation-for="Name" style="color:red"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="stdName" class="form-label">Student Name</label>
+        <input type="text" class="form-control" asp-for="Name" id="stdName" name="name">
+        <span asp-validation-for="Name" style="color:red"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="stdEmail" class="form-label">Email</label>
+        <input type="text" class="form-control" asp-for="Email" id="stdEmail" name="email">
+        <span asp-validation-for="Email" style="color:red"></span>
+
+    </div>
+
+    <div class="mb-3">
+        <label for="stdMobile" class="form-label">Mobile</label>
+        <input type="text" class="form-control" asp-for="Mobile" id="stdMobile" name="mobile">
+        <span asp-validation-for="Mobile" style="color:red"></span>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Records</button>
+</form>

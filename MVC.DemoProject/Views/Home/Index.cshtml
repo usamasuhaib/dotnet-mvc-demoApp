@@ -1,0 +1,124 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using MVC.DemoProject.Models
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <!-- User is signed in -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            @*   <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
+        </a> *@
+        </div>
+
+        <!-- Content Row -->
+        <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Registered Users
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.UserCount</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-users fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Total Students
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.StdCount</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-user-graduate fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                    Images Uploaded
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.ImgCount</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-box fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Row -->
+    </div>
+}
+else
+{
+    <!-- User is not signed in -->
+    <div class="container-fluid text-center">
+        <h1 class="display-4">Welcome!</h1>
+        <p class="lead">Please login or register to access the dashboard.</p>
+        <a class="btn btn-primary btn-lg" href="/Identity/Account/Login">Login</a>
+        <a class="btn btn-secondary btn-lg" href="/Identity/Account/Register">Register</a>
+    </div>
+}
+
+
+<div class="alert-container">
+
+    @if ((string)TempData["EmailStatus"] == "sent")
+    {
+        <div class="alert alert-success" role="alert">
+            Email sent successfully!
+        </div>
+    }
+    else if ((string)TempData["EmailStatus"] == "failed")
+    {
+        <div class="alert alert-danger" role="alert">
+            Failed to send email. Please try again later.
+        </div>
+    }
+</div>
+
+
+<style>
+    /* Style for  container */
+    .alert-container {
+        position: fixed;
+        bottom: 15px;
+        right: 20px;
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+
+</style>

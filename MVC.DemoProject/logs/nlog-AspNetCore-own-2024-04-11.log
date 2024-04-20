@@ -1,0 +1,9 @@
+2024-04-11 13:19:06.3984|0|DEBUG|Program|init main |url: |action: 
+2024-04-11 13:19:10.4997|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-04-11 13:19:10.5189|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-04-11 13:19:10.5189|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-04-11 13:19:10.5243|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-04-11 13:19:10.5243|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-04-11 13:22:13.8827|0|INFO|MVC.DemoProject.Areas.Identity.Pages.Account.RegisterModel|User created a new account with password. |url: https://localhost/Identity/Account/Register|action: 
+2024-04-11 13:23:06.4726|0|INFO|MVC.DemoProject.Areas.Identity.Pages.Account.LoginModel|User logged in. |url: https://localhost/Identity/Account/Login|action: 
+2024-04-11 13:25:32.2710|0|INFO|MVC.DemoProject.Areas.Identity.Pages.Account.LogoutModel|User logged out. |url: https://localhost/Identity/Account/Logout|action: 

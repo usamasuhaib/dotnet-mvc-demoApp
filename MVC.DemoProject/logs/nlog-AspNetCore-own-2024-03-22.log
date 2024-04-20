@@ -1,0 +1,290 @@
+2024-03-22 02:18:01.3968|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 02:18:04.1483|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 02:18:04.1483|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 02:18:04.1483|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 02:18:04.1483|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 02:18:04.1483|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 02:22:32.6514|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 02:22:33.3608|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 02:22:33.3667|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 02:22:33.3667|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 02:22:33.3667|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 02:22:33.3667|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 02:29:25.2404|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnDisconnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.HubOnDisconnectedAsync(HubConnectionContext connection, Exception exception)|url: https://localhost/chatHub|action: 
+2024-03-22 02:29:25.2556|3|ERROR|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Failed disposing connection 50wURuSGzKNMA-snL5Cqdg. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.HubOnDisconnectedAsync(HubConnectionContext connection, Exception exception)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.OnConnectedAsync(ConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.OnConnectedAsync(ConnectionContext connection)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext.ExecuteApplication(ConnectionDelegate connectionDelegate)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext.WaitOnTasks(Task applicationTask, Task transportTask, Boolean closeGracefully)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionContext.DisposeAsync(Boolean closeGracefully)
+   at Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager.DisposeAndRemoveAsync(HttpConnectionContext connection, Boolean closeGracefully, HttpConnectionStopStatus status)|url: https://localhost/chatHub|action: 
+2024-03-22 02:29:25.3183|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnConnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)|url: https://localhost/chatHub|action: 
+2024-03-22 02:29:40.0543|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnConnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)|url: https://localhost/chatHub|action: 
+2024-03-22 02:30:24.7320|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnConnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)|url: https://localhost/chatHub|action: 
+2024-03-22 02:31:19.9888|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnConnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)|url: https://localhost/chatHub|action: 
+2024-03-22 02:31:27.7129|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnConnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)|url: https://localhost/chatHub|action: 
+2024-03-22 02:31:33.2408|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnConnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)|url: https://localhost/chatHub|action: 
+2024-03-22 02:31:44.3691|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnConnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)|url: https://localhost/chatHub|action: 
+2024-03-22 02:31:54.8726|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnConnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)|url: https://localhost/chatHub|action: 
+2024-03-22 02:32:05.0385|1|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnConnectedAsync' on hub. System.MissingMethodException: Attempted to invoke a deleted method implementation. This can happen when a method is deleted or its name or signature is changed while the application is running.
+   at MVC.DemoProject.Hubs.ChatHub..ctor()
+   at lambda_method97(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubActivator`1.Create()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)|url: https://localhost/chatHub|action: 
+2024-03-22 02:32:50.7263|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 02:32:51.8128|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 02:32:51.8128|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 02:32:51.8128|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 02:32:51.8128|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 02:32:51.8178|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 02:52:26.4315|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 02:52:27.6653|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 02:52:27.6653|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 02:52:27.6653|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 02:52:27.6653|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 02:52:27.6653|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:07:41.3181|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:07:42.9471|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:07:42.9471|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:07:42.9471|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:07:42.9471|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:07:42.9471|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:32:38.9913|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:32:39.9015|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:32:39.9015|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:32:39.9015|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:32:39.9015|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:32:39.9015|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:36:27.8340|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:36:29.8642|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:36:29.8642|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:36:29.8642|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:36:29.8642|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:36:29.8642|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:39:22.2756|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:39:23.3153|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:39:23.3189|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:39:23.3189|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:39:23.3189|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:39:23.3189|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:39:36.6796|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:39:37.5953|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:39:37.6028|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:39:37.6028|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:39:37.6028|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:39:37.6028|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:41:36.9807|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:41:37.9351|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:41:37.9351|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:41:37.9351|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:41:37.9351|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:41:37.9351|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:43:08.5887|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:43:09.2192|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:43:09.2239|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:43:09.2239|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:43:09.2239|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:43:09.2239|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:43:33.6970|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:43:34.2955|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:43:34.2955|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:43:34.2955|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:43:34.2955|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:43:34.2955|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:44:07.9116|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:44:08.4195|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:44:08.4326|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:44:08.4326|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:44:08.4326|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:44:08.4326|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:45:03.3188|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:45:04.0158|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:45:04.0158|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:45:04.0203|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:45:04.0203|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:45:04.0203|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:46:29.2300|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:46:29.8938|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:46:29.9058|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:46:29.9058|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:46:29.9058|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:46:29.9058|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:48:14.9465|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:48:15.7054|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:48:15.7100|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:48:15.7100|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:48:15.7100|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:48:15.7100|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:51:33.8583|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:51:34.9698|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:51:34.9741|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:51:34.9741|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:51:34.9741|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:51:34.9741|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:52:54.7580|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:52:55.3089|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:52:55.3089|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:52:55.3089|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:52:55.3089|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:52:55.3089|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 03:53:46.5210|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 03:53:47.1193|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 03:53:47.1193|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 03:53:47.1193|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 03:53:47.1193|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 03:53:47.1193|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:02:32.7765|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:02:33.8091|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:02:33.8240|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:02:33.8240|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:02:33.8240|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:02:33.8240|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:04:03.0233|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:04:03.7629|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:04:03.7629|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:04:03.7629|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:04:03.7629|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:04:03.7629|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:05:06.6159|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:05:07.8280|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:05:07.8280|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:05:07.8280|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:05:07.8330|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:05:07.8330|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:05:40.2136|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:05:40.8471|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:05:40.8510|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:05:40.8510|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:05:40.8510|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:05:40.8510|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:06:10.1469|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:06:10.8939|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:06:10.8994|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:06:10.8994|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:06:10.8994|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:06:10.8994|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:09:48.9238|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:09:51.9728|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:09:51.9779|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:09:51.9779|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:09:51.9779|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:09:51.9779|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:10:18.9643|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:10:20.6682|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:10:20.6682|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:10:20.6682|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:10:20.6682|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:10:20.6682|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:21:53.8918|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:21:57.6933|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:21:57.6933|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:21:57.6933|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:21:57.6933|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:21:57.6933|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:22:37.1766|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:22:37.7622|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:22:37.7622|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:22:37.7622|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:22:37.7622|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:22:37.7622|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:28:44.1157|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:28:49.0444|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:28:49.0444|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:28:49.0444|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:28:49.0444|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:28:49.0444|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:35:11.6037|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:35:12.8686|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:35:12.8686|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:35:12.8686|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:35:12.8686|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:35:12.8686|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:36:09.2093|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:36:09.8785|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:36:09.8823|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:36:09.8823|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:36:09.8823|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:36:09.8823|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:37:24.9010|0|INFO|MVC.DemoProject.Areas.Identity.Pages.Account.LogoutModel|User logged out. |url: https://localhost/Identity/Account/Logout|action: 
+2024-03-22 04:37:41.6653|0|INFO|MVC.DemoProject.Areas.Identity.Pages.Account.LoginModel|User logged in. |url: https://localhost/Identity/Account/Login|action: 
+2024-03-22 04:48:58.6944|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:48:59.9215|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:48:59.9327|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:48:59.9327|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:48:59.9327|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:48:59.9327|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:51:42.2600|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:51:43.0316|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:51:43.0365|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:51:43.0365|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:51:43.0365|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:51:43.0365|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 
+2024-03-22 04:53:24.2605|0|DEBUG|Program|init main |url: |action: 
+2024-03-22 04:53:24.9098|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7091 |url: |action: 
+2024-03-22 04:53:24.9143|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5247 |url: |action: 
+2024-03-22 04:53:24.9143|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-03-22 04:53:24.9143|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-03-22 04:53:24.9143|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\.NetCoreProjects\MVC.DemoProject\MVC.DemoProject |url: |action: 

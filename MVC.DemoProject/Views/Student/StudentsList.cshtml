@@ -1,0 +1,81 @@
+﻿@model List<MVC.DemoProject.Models.Student>
+@{
+    ViewData["Title"] = "StudentsList";
+}
+
+<div class="row">
+    <div class="col d-flex justify-content-between align-items-center">
+        <h1>StudentsList</h1>
+        <a asp-controller="Student" asp-action="AddStudent" class="btn btn-primary">Add New Student</a>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile Number</th>
+            <th scope="col">Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var std in Model)
+        {
+            <tr>
+                <th scope="row">@std.Id</th>
+                <td>@std.Name</td>
+                <td>@std.Email</td>
+                <td>@std.Mobile</td>
+                <td>
+                    <a class="btn btn-primary " tabindex="-1" role="button" asp-controller="Student" asp-action="EditStudent" asp-route-id="@std.Id">Edit</a>
+                    <a  class="btn btn-danger " tabindex="-1" role="button" asp-Controller="Student" asp-action="DeleteStudent" asp-route-id="@std.Id" asp>Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<div class="alert-container">
+
+    @if (@TempData["insert_success"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["insert_success"];
+
+        </div>
+    }
+    @if (@TempData["delete_success"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["delete_success"];
+
+        </div>
+    }
+    @if (@TempData["update_success"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["update_success"];
+
+        </div>
+    }
+
+</div>
+
+
+<style>
+    /* Style for  container */
+    .alert-container {
+        position: fixed;
+        bottom: 15px;
+        right: 20px;
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+
+</style>
+
+

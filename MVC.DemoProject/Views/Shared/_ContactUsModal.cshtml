@@ -1,0 +1,39 @@
+﻿<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form class="row g-3" asp-controller="Email" asp-action="OnPost" method="post">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="name" class="form-label">Email Subject</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+
+                    <div class="col-12">
+                        <label for="subject" class="form-label">Message</label>
+                        <textarea type="text" class="form-control" id="subject" name="subject" placeholder="Write Your message here..."></textarea>
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" id="sendEmailBtn" class="btn btn-primary">Send Email</button>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

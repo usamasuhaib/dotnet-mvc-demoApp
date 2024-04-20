@@ -1,0 +1,83 @@
+﻿@model List<MVC.DemoProject.Models.ImageImplementation.Image>
+@{
+    ViewData["Title"] = "Products List";
+}
+
+<div class="row">
+    <div class="col d-flex justify-content-between align-items-center">
+        <h1>StudentsList</h1>
+        <a asp-controller="Image" asp-action="Create" class="btn btn-primary">Add New Image</a>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+            <th scope="col">Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var img in Model)
+        {
+
+
+            <tr>
+                <th scope="row">@img.Id</th>
+                <td>@img.Description</td>
+                <td>
+                    <img src="~/uploads/Images/@img.ImagePath" style="width: 100px; height: 100px;" />
+                </td>
+                <td>
+                    <a class="btn btn-primary " tabindex="-1" role="button" asp-controller="Image" asp-action="Edit" asp-route-id="@img.Id">Edit</a>
+                    <a class="btn btn-danger " tabindex="-1" role="button" asp-Controller="Image" asp-action="Delete" asp-route-id="@img.Id">Delete</a>
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+
+
+<div class="alert-container">
+
+    @if (@TempData["insert_success"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["insert_success"];
+
+        </div>
+    }
+    @if (@TempData["delete_success"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["delete_success"];
+
+        </div>
+    }
+    @if (@TempData["update_success"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["update_success"];
+
+        </div>
+    }
+
+</div>
+
+
+<style>
+    /* Style for  container */
+    .alert-container {
+        position: fixed;
+        bottom: 15px;
+        right: 20px;
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+
+</style>

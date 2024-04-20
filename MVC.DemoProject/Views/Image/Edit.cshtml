@@ -1,0 +1,73 @@
+﻿@model MVC.DemoProject.Models.ImageImplementation.Image;
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+<form asp-controller="Image" asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="Description" class="form-label">Image Description</label>
+        <input type="text" class="form-control" asp-for="Description" id="Description" name="Description">
+        <span asp-validation-for="Description" style="color:red"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ImageFile" class="form-label">Choose Image</label>
+        <input type="file" class="form-control" asp-for="ImageFile" id="ImageFile" name="ImageFile">
+        <span asp-validation-for="ImageFile" style="color:red"></span>
+    </div>
+
+    <!-- Display previous image if available -->
+    @if (!string.IsNullOrEmpty(Model.ImagePath))
+    {
+        <div class="mb-3">
+@*             <label class="form-label">Old Image</label>
+ *@            <img src="~/uploads/Images/@Model.ImagePath" class="img-thumbnail" style="max-width: 200px;" />
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">Save Records</button>
+</form>
+
+
+
+@if (ViewData["ErrorMessages"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        <ul>
+            @foreach (var errorMessage in ViewData["ErrorMessages"] as List<string>)
+            {
+                <li>@errorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+
+
+
+<div class="alert-container">
+
+    @if (@TempData["insert_failed"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["insert_failed"];
+
+        </div>
+    }
+
+
+</div>
+
+
+<style>
+    /* Style for  container */
+    .alert-container {
+        position: fixed;
+        bottom: 15px;
+        right: 20px;
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+
+</style>
